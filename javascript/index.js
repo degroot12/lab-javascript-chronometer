@@ -89,7 +89,7 @@ function setResetBtn() {
 // Start/Stop Button
 btnLeft.addEventListener('click', () => {
   if(btnLeft.classList.contains('start')){
-    chronometer.startClick(printTime, printMilliseconds);
+    chronometer.startClick(printTime);
     setStopBtn();
     setSplitBtn()
   } else {
@@ -109,23 +109,3 @@ btnRight.addEventListener('click', () => {
     printSplit()
   }
 });
-
-
-// function handleForm(){
-//   let form = document.querySelector('#myForm')
-//   let olList = document.querySelector('ol')
-
-
-//   // some default behaviour
-//   form.addEventListener('submit', function(event){
-//       event.preventDefault()
-//       let name = document.querySelector('#name')
-//       console.log(name.value)
-//       let item = document.createElement('li')
-//       item.innerText = name.value
-//       console.log(item)
-
-//       ulList.appendChild(item)
-
-//   })
-// }
